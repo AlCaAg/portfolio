@@ -1,0 +1,23 @@
+header {
+	background: url(../img/background-image.jpg);
+}
+
+.intro-text span.name {
+	text-transform: none;
+}
+
+div.col-lg-12 img.img-responsive {
+	max-width: 30%;
+}
+
+.progress-bar {
+  -webkit-transition: none !important;
+  transition: none !important;
+  background-color: #2C3E50;
+}
+
+#lang_change img {
+	width: 40px;
+	cursor: pointer;
+  margin-right: 10px;
+}
