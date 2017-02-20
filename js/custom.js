@@ -52,7 +52,7 @@ var changeLanguage = function(value) {
 		$("#portfolioModal1 ul").html("<li>Fecha: <strong>Octubre 2016 a Julio 2017</strong></li><li>Servicio: <strong>Soporte y creación de contenido Web</strong></li>");
 		$("#portfolioModal1 button").html("<i class='fa fa-times'></i> Cerrar");
 		$("#portfolioModal2 h2").html("Desarrollo Web");
-		$("#portfolioModal2 p-info_modal").html("Página web creada para el Programa de Integración a las Tecnologias de la Universidad de Antioquia, el cual hace uso  del software cURL para la consulta de información.");
+		$("#portfolioModal2 p.info_modal").html("Página web creada para el Programa de Integración a las Tecnologias de la Universidad de Antioquia, el cual hace uso  del software cURL para la consulta de información.");
 		$("#portfolioModal2 p a").html("Visitar sitio");
 		$("#portfolioModal2 ul").html("<li>Fecha:	<strong>Noviembre 2016</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
 		$("#portfolioModal2 button").html("<i class='fa fa-times'></i> Cerrar");
@@ -75,12 +75,12 @@ var changeLanguage = function(value) {
 		$("footer #loca h3").html("Location");
 		$("footer #social h3").html("Aroung the Web");
 		$("footer #lang_change h3").html("Change language");
-		$("#portfolioModal1 p#info_modal").html("Installation, support and creation of content for the OJS (Open Journal System) of the University of Antioquia.");
+		$("#portfolioModal1 p.info_modal").html("Installation, support and creation of content for the OJS (Open Journal System) of the University of Antioquia.");
 		$("#portfolioModal1 p a").html("Visit site");
 		$("#portfolioModal1 ul").html("<li>Date: <strong>October 2016 to July 2017</strong></li><li>Service: <strong>Web support and development</strong></li>");
 		$("#portfolioModal1 button").html("<i class='fa fa-times'></i> Close");
 		$("#portfolioModal2 h2").html("Web Development");
-		$("#portfolioModal2 p#info_modal").html("Website created for the Programa de Integración a las Tecnologias of the University of Antioquia, which uses cURL software to query information.");
+		$("#portfolioModal2 p.info_modal").html("Website created for the Programa de Integración a las Tecnologias of the University of Antioquia, which uses cURL software to query information.");
 		$("#portfolioModal2 p a").html("Visit site");
 		$("#portfolioModal2 ul").html("<li>Date:	<strong>November 2016</strong></li><li>Service: <strong>Web development</strong></li>");
 		$("#portfolioModal2 button").html("<i class='fa fa-times'></i> Close");
