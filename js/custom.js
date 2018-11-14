@@ -1,13 +1,16 @@
 var initData = function() {
+	var skill_java = 90;
 	var skill_html = 87;
 	var skill_css = 87;
 	var skill_php = 90;
 	var skill_js = 87;
 	var skill_jq = 73;
-	var skill_ajax = 60;
+	var skill_ajax = 70;
 	var skill_bt = 60;
 	var skill_mysql = 70;
+	var skill_postgres = 80;
 
+	$("#s_java .progress-bar").attr("aria-valuenow", skill_java);
 	$("#s_html .progress-bar").attr("aria-valuenow", skill_html);
 	$("#s_css .progress-bar").attr("aria-valuenow", skill_css);
 	$("#s_php .progress-bar").attr("aria-valuenow", skill_php);
@@ -16,6 +19,7 @@ var initData = function() {
 	$("#s_ajax .progress-bar").attr("aria-valuenow", skill_ajax);
 	$("#s_bt .progress-bar").attr("aria-valuenow", skill_bt);
 	$("#s_mysql .progress-bar").attr("aria-valuenow", skill_mysql);
+	$("#s_postgres .progress-bar").attr("aria-valuenow", skill_postgres);
 }
 
 var initSkills = function() {
