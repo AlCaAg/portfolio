@@ -58,13 +58,13 @@ var changeLanguage = function(value) {
 		
 		$("#portfolioModal1 p.info_modal").html("Instalación, soporte y creación de contenido para el sistema de revistas de codigo abierto OJS (Open Journal System) de la Universidad de Antioquia.");
 		$("#portfolioModal1 p a").html("Visitar sitio");
-		$("#portfolioModal1 ul").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Octubre 2016 a Julio 2017</strong></li><li>Servicio: <strong>Soporte y creación de contenido Web</strong></li>");
+		$("#portfolioModal1 ul").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Octubre 2015 a Julio 2016</strong></li><li>Servicio: <strong>Soporte y creación de contenido Web</strong></li>");
 		$("#portfolioModal1 button").html("<i class='fa fa-times'></i> Cerrar");
 		
 		$("#portfolioModal2 h2").html("Desarrollo Web");
 		$("#portfolioModal2 p.info_modal").html("Página web creada para el Programa de Integración a las Tecnologias de la Universidad de Antioquia, el cual hace uso  del software cURL para la consulta de información.");
 		$("#portfolioModal2 p a").html("Visitar sitio");
-		$("#portfolioModal2 ul").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Noviembre 2016</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
+		$("#portfolioModal2 ul").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Noviembre 2015</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
 		$("#portfolioModal2 button").html("<i class='fa fa-times'></i> Cerrar");
 
 		$("#portfolioModal3 h2").html("Desarrollo Web");
@@ -98,13 +98,13 @@ var changeLanguage = function(value) {
 		
 		$("#portfolioModal1 p.info_modal").html("Installation, support and creation of content for the OJS (Open Journal System) of the University of Antioquia.");
 		$("#portfolioModal1 p a").html("Visit site");
-		$("#portfolioModal1 ul").html("<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date: <strong>October 2016 to July 2017</strong></li><li>Service: <strong>Web support and development</strong></li>");
+		$("#portfolioModal1 ul").html("<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date: <strong>October 2015 to July 2016</strong></li><li>Service: <strong>Web support and development</strong></li>");
 		$("#portfolioModal1 button").html("<i class='fa fa-times'></i> Close");
 		
 		$("#portfolioModal2 h2").html("Web Development");
 		$("#portfolioModal2 p.info_modal").html("Website created for the Programa de Integración a las Tecnologias of the University of Antioquia, which uses cURL software to query information.");
 		$("#portfolioModal2 p a").html("Visit site");
-		$("#portfolioModal2 ul").html("<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date:	<strong>November 2016</strong></li><li>Service: <strong>Web development</strong></li>");
+		$("#portfolioModal2 ul").html("<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date:	<strong>November 2015</strong></li><li>Service: <strong>Web development</strong></li>");
 		$("#portfolioModal2 button").html("<i class='fa fa-times'></i> Close");
 
 		$("#portfolioModal3 h2").html("Web Development");
