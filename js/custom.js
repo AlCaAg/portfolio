@@ -1,25 +1,29 @@
 var initData = function() {
-	var skill_java = 90;
-	var skill_html = 75;
-	var skill_css = 75;
-	var skill_php = 65;
-	var skill_js = 75;
-	var skill_postgres = 80;
-	var skill_linux = 80;
-  var skill_jasper = 70;
-  var skill_primefaces = 85;
+	var skillJava = 90;
+  var skillJavaEE = 90;
+	var skillHTML = 75;
+	var skillCSS = 75;
+	var skillJS = 75;
+	var skillPostgreSQL = 80;
+	var skillLinux = 80;
+  var skillJasper = 70;
+  var skillPrimefaces = 85;
   var skillDocker = 80;
+  var skillScrum = 60;
+  var skillGit = 70;
 
-	$("#s_java .progress-bar").attr("aria-valuenow", skill_java);
-	$("#s_html .progress-bar").attr("aria-valuenow", skill_html);
-	$("#s_css .progress-bar").attr("aria-valuenow", skill_css);
-	$("#s_php .progress-bar").attr("aria-valuenow", skill_php);
-	$("#s_js .progress-bar").attr("aria-valuenow", skill_js);
-	$("#s_postgres .progress-bar").attr("aria-valuenow", skill_postgres);
-	$("#s_linux .progress-bar").attr("aria-valuenow", skill_linux);
-  $("#s_jasper .progress-bar").attr("aria-valuenow", skill_jasper);
-  $("#s_primefaces .progress-bar").attr("aria-valuenow", skill_primefaces);
+	$("#s_java .progress-bar").attr("aria-valuenow", skillJava);
+  $("#s_javaEE .progress-bar").attr("aria-valuenow", skillJavaEE);
+	$("#s_html .progress-bar").attr("aria-valuenow", skillHTML);
+	$("#s_css .progress-bar").attr("aria-valuenow", skillCSS);
+	$("#s_js .progress-bar").attr("aria-valuenow", skillJS);
+	$("#s_postgres .progress-bar").attr("aria-valuenow", skillPostgreSQL);
+	$("#s_linux .progress-bar").attr("aria-valuenow", skillLinux);
+  $("#s_jasper .progress-bar").attr("aria-valuenow", skillJasper);
+  $("#s_primefaces .progress-bar").attr("aria-valuenow", skillPrimefaces);
   $("#s_docker .progress-bar").attr("aria-valuenow", skillDocker);
+  $("#s_scrum .progress-bar").attr("aria-valuenow", skillScrum);
+  $("#s_git .progress-bar").attr("aria-valuenow", skillGit);
 }
 
 var initSkills = function() {
@@ -43,8 +47,8 @@ var changeLanguage = function(value) {
 		$("span.skills").html("Ingeniero Electrónico");
 		$("#portfolio h2").html("Proyectos");
 		$("#about h2").html("Sobre");
-		$("#about p").html("Ingeniero Electrónico de la Universidad de Antioquia, con un excelente sentido de pertenencia. Me preocupa mucho la puntualidad, orden y calidad de una tarea que deba realizar. Me apasiona la tecnología y por eso estoy siempre pendiente de los últimos avances en dispositivos e investigaciones.");
-		$("#about h3").html("Habilidades de programación");
+		$("#about p").html("Ingeniero Electrónico con un buen sentido de pertenencia. Me preocupa mucho la puntualidad, orden y calidad de una tarea que deba realizar. Me apasiona la tecnología y por eso estoy pendiente de los últimos avances en programación y dispositivos.");
+		$("#about h3").html("Habilidades");
 		$("#contact h2").html("Contáctame");
 		$("#contact #info1 h3").html("Número telefonico");
 		$("#contact #info2 h3").html("Correo");
@@ -83,8 +87,9 @@ var changeLanguage = function(value) {
 		$("span.skills").html("Electronic Engineer");
 		$("#portfolio h2").html("Projects");
 		$("#about h2").html("About");
-		$("#about p").html("Electronic Engineer from the University of Antioquia, with an excellent sense of belonging. I am very concerned about the punctuality, order and quality of a task that must be performed. I am passionate about technology and that is why I am always aware of the latest advances in devices and research.");
-		$("#about h3").html("Programming skills");
+
+		$("#about p").html("Electronic Engineer with a good sense of belonging. I am very concerned about the punctuality, order and quality of a task that must be performed. I am passionate about technology and that is why I am always aware of the latest advances in software and hardware.");
+		$("#about h3").html("Skills");
 		$("#contact h2").html("Contact Me");
 		$("#contact #info1 h3").html("Phone number");
 		$("#contact #info2 h3").html("Email");
