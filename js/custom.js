@@ -11,7 +11,7 @@ var initData = function() {
   var skillDocker = 80;
   var skillScrum = 60;
   var skillGit = 70;
-	var skillSpring = 70;
+	var skillSpring = 80;
 	var skillJUnit = 70;
 
 	$("#s_java .progress-bar").attr("aria-valuenow", skillJava);
