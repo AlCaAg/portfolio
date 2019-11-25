@@ -11,6 +11,8 @@ var initData = function() {
   var skillDocker = 80;
   var skillScrum = 60;
   var skillGit = 70;
+	var skillSpring = 70;
+	var skillJUnit = 70;
 
 	$("#s_java .progress-bar").attr("aria-valuenow", skillJava);
   $("#s_javaEE .progress-bar").attr("aria-valuenow", skillJavaEE);
@@ -24,6 +26,8 @@ var initData = function() {
   $("#s_docker .progress-bar").attr("aria-valuenow", skillDocker);
   $("#s_scrum .progress-bar").attr("aria-valuenow", skillScrum);
   $("#s_git .progress-bar").attr("aria-valuenow", skillGit);
+	$("#s_spring .progress-bar").attr("aria-valuenow", skillSpring);
+	$("#s_jUnit .progress-bar").attr("aria-valuenow", skillJUnit);
 }
 
 var initSkills = function() {
