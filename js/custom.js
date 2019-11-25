@@ -1,29 +1,29 @@
 var initData = function() {
-	var skill_java = 90;
-	var skill_cplusplus = 80;
-	var skill_html = 87;
-	var skill_css = 87;
-	var skill_php = 90;
-	var skill_js = 87;
-	var skill_jq = 73;
-	var skill_ajax = 70;
-	var skill_bt = 60;
-	var skill_mysql = 70;
-	var skill_postgres = 80;
-	var skill_linux = 80;
+	var skillJava = 90;
+  var skillJavaEE = 90;
+	var skillHTML = 75;
+	var skillCSS = 75;
+	var skillJS = 75;
+	var skillPostgreSQL = 80;
+	var skillLinux = 80;
+  var skillJasper = 70;
+  var skillPrimefaces = 85;
+  var skillDocker = 80;
+  var skillScrum = 60;
+  var skillGit = 70;
 
-	$("#s_java .progress-bar").attr("aria-valuenow", skill_java);
-	$("#s_cplusplus .progress-bar").attr("aria-valuenow", skill_cplusplus);
-	$("#s_html .progress-bar").attr("aria-valuenow", skill_html);
-	$("#s_css .progress-bar").attr("aria-valuenow", skill_css);
-	$("#s_php .progress-bar").attr("aria-valuenow", skill_php);
-	$("#s_js .progress-bar").attr("aria-valuenow", skill_js);
-	$("#s_jq .progress-bar").attr("aria-valuenow", skill_jq);
-	$("#s_ajax .progress-bar").attr("aria-valuenow", skill_ajax);
-	$("#s_bt .progress-bar").attr("aria-valuenow", skill_bt);
-	$("#s_mysql .progress-bar").attr("aria-valuenow", skill_mysql);
-	$("#s_postgres .progress-bar").attr("aria-valuenow", skill_postgres);
-	$("#s_linux .progress-bar").attr("aria-valuenow", skill_linux);
+	$("#s_java .progress-bar").attr("aria-valuenow", skillJava);
+  $("#s_javaEE .progress-bar").attr("aria-valuenow", skillJavaEE);
+	$("#s_html .progress-bar").attr("aria-valuenow", skillHTML);
+	$("#s_css .progress-bar").attr("aria-valuenow", skillCSS);
+	$("#s_js .progress-bar").attr("aria-valuenow", skillJS);
+	$("#s_postgres .progress-bar").attr("aria-valuenow", skillPostgreSQL);
+	$("#s_linux .progress-bar").attr("aria-valuenow", skillLinux);
+  $("#s_jasper .progress-bar").attr("aria-valuenow", skillJasper);
+  $("#s_primefaces .progress-bar").attr("aria-valuenow", skillPrimefaces);
+  $("#s_docker .progress-bar").attr("aria-valuenow", skillDocker);
+  $("#s_scrum .progress-bar").attr("aria-valuenow", skillScrum);
+  $("#s_git .progress-bar").attr("aria-valuenow", skillGit);
 }
 
 var initSkills = function() {
@@ -47,20 +47,20 @@ var changeLanguage = function(value) {
 		$("span.skills").html("Ingeniero Electrónico");
 		$("#portfolio h2").html("Proyectos");
 		$("#about h2").html("Sobre");
-		$("#about p").html("Ingeniero Electrónico de la Universidad de Antioquia, con un excelente sentido de pertenencia. Me preocupa mucho la puntualidad, orden y calidad de una tarea que deba realizar. Me apasiona la tecnología y por eso estoy siempre pendiente de los últimos avances en dispositivos e investigaciones.");
-		$("#about h3").html("Habilidades de programación");
+		$("#about p").html("Ingeniero Electrónico con un buen sentido de pertenencia. Me preocupa mucho la puntualidad, orden y calidad de una tarea que deba realizar. Me apasiona la tecnología y por eso estoy pendiente de los últimos avances en programación y dispositivos.");
+		$("#about h3").html("Habilidades");
 		$("#contact h2").html("Contáctame");
 		$("#contact #info1 h3").html("Número telefonico");
 		$("#contact #info2 h3").html("Correo");
 		$("footer #loca h3").html("Ubicación");
 		$("footer #social h3").html("En la Web");
 		$("footer #lang_change h3").html("Cambiar idioma");
-		
+
 		$("#portfolioModal1 p.info_modal").html("Instalación, soporte y creación de contenido para el sistema de revistas de codigo abierto OJS (Open Journal System) de la Universidad de Antioquia.");
 		$("#portfolioModal1 p a").html("Visitar sitio");
 		$("#portfolioModal1 ul").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Octubre 2015 a Julio 2016</strong></li><li>Servicio: <strong>Soporte y creación de contenido Web</strong></li>");
 		$("#portfolioModal1 button").html("<i class='fa fa-times'></i> Cerrar");
-		
+
 		$("#portfolioModal2 h2").html("Desarrollo Web");
 		$("#portfolioModal2 p.info_modal").html("Página web creada para el Programa de Integración a las Tecnologias de la Universidad de Antioquia, el cual hace uso  del software cURL para la consulta de información.");
 		$("#portfolioModal2 p a").html("Visitar sitio");
@@ -87,20 +87,21 @@ var changeLanguage = function(value) {
 		$("span.skills").html("Electronic Engineer");
 		$("#portfolio h2").html("Projects");
 		$("#about h2").html("About");
-		$("#about p").html("Electronic Engineer from the University of Antioquia, with an excellent sense of belonging. I am very concerned about the punctuality, order and quality of a task that must be performed. I am passionate about technology and that is why I am always aware of the latest advances in devices and research.");
-		$("#about h3").html("Programming skills");
+
+		$("#about p").html("Electronic Engineer with a good sense of belonging. I am very concerned about the punctuality, order and quality of a task that must be performed. I am passionate about technology and that is why I am always aware of the latest advances in software and hardware.");
+		$("#about h3").html("Skills");
 		$("#contact h2").html("Contact Me");
 		$("#contact #info1 h3").html("Phone number");
 		$("#contact #info2 h3").html("Email");
 		$("footer #loca h3").html("Location");
 		$("footer #social h3").html("Aroung the Web");
 		$("footer #lang_change h3").html("Change language");
-		
+
 		$("#portfolioModal1 p.info_modal").html("Installation, support and creation of content for the OJS (Open Journal System) of the University of Antioquia.");
 		$("#portfolioModal1 p a").html("Visit site");
 		$("#portfolioModal1 ul").html("<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date: <strong>October 2015 to July 2016</strong></li><li>Service: <strong>Web support and development</strong></li>");
 		$("#portfolioModal1 button").html("<i class='fa fa-times'></i> Close");
-		
+
 		$("#portfolioModal2 h2").html("Web Development");
 		$("#portfolioModal2 p.info_modal").html("Website created for the Programa de Integración a las Tecnologias of the University of Antioquia, which uses cURL software to query information.");
 		$("#portfolioModal2 p a").html("Visit site");
