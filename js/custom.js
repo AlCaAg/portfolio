@@ -11,6 +11,8 @@ var initData = function() {
   var skillDocker = 80;
   var skillScrum = 60;
   var skillGit = 70;
+	var skillSpring = 70;
+	var skillJUnit = 70;
 
 	$("#s_java .progress-bar").attr("aria-valuenow", skillJava);
   $("#s_javaEE .progress-bar").attr("aria-valuenow", skillJavaEE);
@@ -24,6 +26,8 @@ var initData = function() {
   $("#s_docker .progress-bar").attr("aria-valuenow", skillDocker);
   $("#s_scrum .progress-bar").attr("aria-valuenow", skillScrum);
   $("#s_git .progress-bar").attr("aria-valuenow", skillGit);
+	$("#s_spring .progress-bar").attr("aria-valuenow", skillSpring);
+	$("#s_jUnit .progress-bar").attr("aria-valuenow", skillJUnit);
 }
 
 var initSkills = function() {
@@ -73,7 +77,7 @@ var changeLanguage = function(value) {
 		$("#portfolioModal3 button").html("<i class='fa fa-times'></i> Cerrar");
 
 		$("#portfolioModal4 h2").html("Desarrollo de Software");
-		$("#portfolioModal4 p.info_modal").html("Desarrollo y soporte de funcionalidades para el sistema de gestión de máquinas en linea SMOL.");
+		$("#portfolioModal4 p.info_modal").html("Desarrollo y soporte de funcionalidades para el sistema de gestión de máquinas en linea SMOL y SMOL Central.");
 		$("#portfolioModal4 ul").html("<li>Empresa: <strong>Intelligent Electronic Solutions</strong></li><li>Fecha: <strong>Julio de 2017 a Actualidad</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
 		$("#portfolioModal4 button").html("<i class='fa fa-times'></i> Cerrar");
 	}
@@ -114,7 +118,7 @@ var changeLanguage = function(value) {
 		$("#portfolioModal3 button").html("<i class='fa fa-times'></i> Close");
 
 		$("#portfolioModal4 h2").html("Software Development");
-		$("#portfolioModal4 p.info_modal").html("Development and support of functionalities for the online machine management system SMOL");
+		$("#portfolioModal4 p.info_modal").html("Development and support of functionalities for the online machine management system SMOL and SMOL Central");
 		$("#portfolioModal4 ul").html("<li>Company: <strong>Intelligent Electronic Solutions</strong></li><li>Date: <strong>July  2017 to Present</strong></li><li>Service: <strong>Software Development</strong></li>");
 		$("#portfolioModal4 button").html("<i class='fa fa-times'></i> Close");
 	}

@@ -101,7 +101,7 @@
 			</div>
 			<div class="row">
 			  <!-- OJS -->
-				<div id="ojs" class="col-sm-3 portfolio-item">
+				<div class="col-sm-3 portfolio-item">
 					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
 						<div class="caption">
 							<div class="caption-content">
@@ -133,7 +133,7 @@
             <img src="img/portfolio/fuerza_aerea.png" class="img-responsive" alt="">
           </a>
         </div>
-        <!-- IES -->
+        <!-- SMOL -->
         <div class="col-sm-3 portfolio-item">
           <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
             <div class="caption">
@@ -169,6 +169,13 @@
 					<div class="col-sm-6 portfolio-item">
           	<div id="s_java">
               <div class="col-md-2 skilltitle">Java</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+						<div id="s_spring">
+              <div class="col-md-2 skilltitle">Spring</div>
               <div class="progress">
                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -227,6 +234,13 @@
             </div>
             <div id="s_postgres">
               <div class="col-md-2 skilltitle">PostgreSQL</div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+						<div id="s_jUnit">
+              <div class="col-md-2 skilltitle">JUnit</div>
               <div class="progress">
                 <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                 </div>
@@ -301,8 +315,8 @@
 					</div>
 					<div id="lang_change" class="footer-col col-md-4">
 						<h3>Cambiar Idioma</h3>
+							<img src="img/eeuu_flag.png" onclick="changeLanguage('en')">
 							<img src="img/colombia_flag.png" onclick="changeLanguage('es')">
-              <img src="img/eeuu_flag.png" onclick="changeLanguage('en')">
 					</div>
 				</div>
 			</div>
@@ -429,8 +443,14 @@
             <div class="modal-body">
               <h2>Desarrollo de Software</h2>
               <hr class="btn-primary">
-              <img src="img/portfolio/smol_page.png" class="img-responsive img-centered" alt="">
-              <p class="info_modal">Desarrollo y soporte de funcionalidades para el sistema de gestión de máquinas en linea SMOL.</p>
+							<!-- Imágenes -->
+							<div class="col-sm-6">
+								<img src="img/portfolio/smol_page.png" class="img-responsive img-centered" alt="">
+							</div>
+							<div class="col-sm-6">
+								<img src="img/portfolio/smol_central_page.png" class="img-responsive img-centered" alt="">
+							</div>
+              <p class="info_modal">Desarrollo y soporte de funcionalidades para el sistema de gestión de máquinas en linea SMOL y SMOL Central.</p>
               <ul class="list-inline item-details">
                 <li>Empresa: <strong>Intelligent Electronic Solutions</strong></li>
                 <li>Fecha: <strong>Julio de 2017 a Actualidad</strong></li>
