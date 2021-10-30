@@ -1,23 +1,28 @@
 header {
-	background: url(../img/background-image.jpg);
+    background: url(../img/background-image.jpg);
 }
 
 .intro-text span.name {
-	text-transform: none;
+    text-transform: none;
 }
 
 div.col-lg-12 img.img-responsive {
-	max-width: 30%;
+    max-width: 30%;
 }
 
 .progress-bar {
-  -webkit-transition: none !important;
-  transition: none !important;
-  background-color: #2C3E50;
+    -webkit-transition: none !important;
+    transition: none !important;
+    background-color: #2C3E50;
 }
 
 #lang_change img {
-	width: 40px;
-	cursor: pointer;
-  margin-right: 10px;
+    width: 40px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.col-md-2.skilltitle {
+    padding-left: 10px;
+    padding-right: 10px;
 }
