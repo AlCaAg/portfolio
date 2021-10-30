@@ -54,7 +54,7 @@ var changeLanguage = function(value) {
         $("a#page1").html("Proyectos");
         $("a#page2").html("Sobre");
         $("a#page3").html("Contacto");
-        $("span.skills").html("Ingeniero Electrónico");
+        $("span.skills").html("Desarrollador de Software / Ingeniero Electrónico");
         $("#portfolio h2").html("Proyectos");
         $("#about h2").html("Sobre");
         $("#about p").html("Ingeniero Electrónico con un excelente sentido de pertenencia. Me preocupa mucho la puntualidad, orden y calidad de una tarea que deba realizar. Me apasiona la tecnología y por eso estoy pendiente de los últimos avances en programación y dispositivos.");
@@ -84,8 +84,13 @@ var changeLanguage = function(value) {
 
         $("#portfolioModal4 h2").html("Desarrollo de Software");
         $("#portfolioModal4 p.info_modal").html("Desarrollo y soporte de funcionalidades para el sistema de gestión de máquinas en linea SMOL y SMOL Central.");
-        $("#portfolioModal4 ul").html("<li>Empresa: <strong>Intelligent Electronic Solutions</strong></li><li>Fecha: <strong>Julio de 2017 a Actualidad</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        $("#portfolioModal4 ul").html("<li>Empresa: <strong>Intelligent Electronic Solutions</strong></li><li>Fecha: <strong>Julio de 2017 a Diciembre de 2019</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
         $("#portfolioModal4 button").html("<i class='fa fa-times'></i> Cerrar");
+
+        $("#portfolioModal5 h2").html("Desarrollo de Software");
+        $("#portfolioModal5 p.info_modal").html("Desarrollo y soporte de funcionalidades para las aplicaciones base de los equipos de tecnología de Suramericana.");
+        $("#portfolioModal5 ul").html("<li>Empresa: <strong>Ceiba Software House / Suramericana</strong></li><li>Fecha: <strong>Junio de 2020 a Actualidad</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        $("#portfolioModal5 button").html("<i class='fa fa-times'></i> Cerrar");
     } else if (value == "en") {
         $("title").html("Alejandro Castaño Agudelo - Portfolio");
         $("button.navbar-toggle").html("<span class='sr-only'>Toggle navigation</span> Menu <i class='fa fa-bars'></i>");
@@ -93,7 +98,7 @@ var changeLanguage = function(value) {
         $("a#page1").html("Projects");
         $("a#page2").html("About");
         $("a#page3").html("Contact");
-        $("span.skills").html("Electronic Engineer");
+        $("span.skills").html("Software Developer / Electronic Engineer");
         $("#portfolio h2").html("Projects");
         $("#about h2").html("About");
 
@@ -123,13 +128,19 @@ var changeLanguage = function(value) {
         $("#portfolioModal3 button").html("<i class='fa fa-times'></i> Close");
 
         $("#portfolioModal4 h2").html("Software Development");
-        $("#portfolioModal4 p.info_modal").html("Development and support of functionalities for the online machine management system SMOL and SMOL Central");
-        $("#portfolioModal4 ul").html("<li>Company: <strong>Intelligent Electronic Solutions</strong></li><li>Date: <strong>July  2017 to Present</strong></li><li>Service: <strong>Software Development</strong></li>");
+        $("#portfolioModal4 p.info_modal").html("Development and support of features for the online machine management system SMOL and SMOL Central");
+        $("#portfolioModal4 ul").html("<li>Company: <strong>Intelligent Electronic Solutions</strong></li><li>Date: <strong>July 2017 to December 2019</strong></li><li>Service: <strong>Software Development</strong></li>");
         $("#portfolioModal4 button").html("<i class='fa fa-times'></i> Close");
+
+        $("#portfolioModal5 h2").html("Software Development");
+        $("#portfolioModal5 p.info_modal").html("Development and support of features for base applications of development teams of Suramericana.");
+        $("#portfolioModal5 ul").html("<li>Company: <strong>Ceiba Software House / Suramericana</strong></li><li>Date: <strong>June 2020 to Present</strong></li><li>Service: <strong>Software Development</strong></li>");
+        $("#portfolioModal5 button").html("<i class='fa fa-times'></i> Close");
     }
 }
 
 $('document').ready(function() {
     initData();
     initSkills();
+    changeLanguage("es");
 });

@@ -26,3 +26,21 @@ div.col-lg-12 img.img-responsive {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.galeria {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-auto-rows: 20rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.item-galeria {
+    width: 220px;
+    height: 220px;
+}
+
+.item-galeria img {
+    width: 204.8px;
+    height: 204.8px;
+}
