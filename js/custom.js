@@ -169,8 +169,7 @@ var changeLanguage = function(value) {
     }
 }
 
-
-$('document').ready(function() {
+document.addEventListener("DOMContentLoaded", function(event) {
     initData();
     initSkills();
     changeLanguage("es");
