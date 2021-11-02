@@ -16,6 +16,7 @@ var initData = function() {
     var skillWildfly = 70;
     var skillWeblogic = 70;
     var skillArquitectura = 75;
+    var skillAngular = 75;
 
     $("#s_java .progress-bar").attr("aria-valuenow", skillJava);
     $("#s_javaEE .progress-bar").attr("aria-valuenow", skillJavaEE);
@@ -34,6 +35,7 @@ var initData = function() {
     $("#s_wildfly .progress-bar").attr("aria-valuenow", skillWildfly);
     $("#s_weblogic .progress-bar").attr("aria-valuenow", skillWeblogic);
     $("#s_arquitectura .progress-bar").attr("aria-valuenow", skillArquitectura);
+    $("#s_angular .progress-bar").attr("aria-valuenow", skillAngular);
 }
 
 var initSkills = function() {
@@ -67,13 +69,13 @@ var changeLanguage = function(value) {
         $("footer #lang_change h3").html("Cambiar idioma");
 
         $("#portfolioModal1 p.info_modal").html("Instalación, soporte y creación de contenido para el sistema de revistas de codigo abierto OJS (Open Journal System) de la Universidad de Antioquia.");
-        $("#portfolioModal1 p a").html("Visitar sitio");
-        $("#portfolioModal1 ul").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Octubre 2015 a Julio 2016</strong></li><li>Servicio: <strong>Soporte y creación de contenido Web</strong></li>");
+        $("#portfolioModal1 ul.info-empresa").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Octubre 2015 a Julio 2016</strong></li><li>Servicio: <strong>Soporte y creación de contenido Web</strong></li>");
+        $("#portfolioModal1 h4.subtitulo").html("Habilidades");
+        $("#portfolioModal1 ul.info-habilidades").html("<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
         $("#portfolioModal1 button").html("<i class='fa fa-times'></i> Cerrar");
 
         $("#portfolioModal2 h2").html("Desarrollo Web");
         $("#portfolioModal2 p.info_modal").html("Página web creada para el Programa de Integración a las Tecnologias de la Universidad de Antioquia, el cual hace uso  del software cURL para la consulta de información.");
-        $("#portfolioModal2 p a").html("Visitar sitio");
         $("#portfolioModal2 ul").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Noviembre 2015</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
         $("#portfolioModal2 button").html("<i class='fa fa-times'></i> Cerrar");
 
@@ -113,7 +115,9 @@ var changeLanguage = function(value) {
 
         $("#portfolioModal1 p.info_modal").html("Installation, support and creation of content for the OJS (Open Journal System) of the University of Antioquia.");
         $("#portfolioModal1 p a").html("Visit site");
-        $("#portfolioModal1 ul").html("<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date: <strong>October 2015 to July 2016</strong></li><li>Service: <strong>Web support and development</strong></li>");
+        $("#portfolioModal1 ul.info-empresa").html("<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date: <strong>October 2015 to July 2016</strong></li><li>Service: <strong>Web support and development</strong></li>");
+        $("#portfolioModal1 h4.subtitulo").html("Skills");
+        $("#portfolioModal1 ul.info-habilidades").html("<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
         $("#portfolioModal1 button").html("<i class='fa fa-times'></i> Close");
 
         $("#portfolioModal2 h2").html("Web Development");
