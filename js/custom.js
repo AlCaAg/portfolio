@@ -75,23 +75,31 @@ var changeLanguage = function(value) {
         $("#portfolioModal1 button").html("<i class='fa fa-times'></i> Cerrar");
 
         $("#portfolioModal2 h2").html("Desarrollo Web");
-        $("#portfolioModal2 p.info_modal").html("Página web creada para el Programa de Integración a las Tecnologias de la Universidad de Antioquia, el cual hace uso  del software cURL para la consulta de información.");
-        $("#portfolioModal2 ul").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Noviembre 2015</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
+        $("#portfolioModal2 p.info_modal").html("Página web creada para el Programa de Integración a las Tecnologias de la Universidad de Antioquia, el cual hace uso CURL para la consulta de información.");
+        $("#portfolioModal2 ul.info-empresa").html("<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Noviembre 2015</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
+        $("#portfolioModal2 h4.subtitulo").html("Habilidades");
+        $("#portfolioModal2 ul.info-habilidades").html("<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
         $("#portfolioModal2 button").html("<i class='fa fa-times'></i> Cerrar");
 
         $("#portfolioModal3 h2").html("Desarrollo Web");
         $("#portfolioModal3 p.info_modal").html("Página web creada para la supervisión y análisis de condiciones climáticas que puedan interferir con el rumbo de aviones de la Fuerza Aérea Colombiana.");
-        $("#portfolioModal3 ul").html("<li>Empresa: <strong>Fuerza Aerea Colombiana</strong></li><li>Fecha: <strong>Febrero 2017 a Julio 2017</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
+        $("#portfolioModal3 ul.info-empresa").html("<li>Empresa: <strong>Fuerza Aerea Colombiana</strong></li><li>Fecha: <strong>Febrero 2017 a Julio 2017</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
+        $("#portfolioModal3 h4.subtitulo").html("Habilidades");
+        $("#portfolioModal3 ul.info-habilidades").html("<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
         $("#portfolioModal3 button").html("<i class='fa fa-times'></i> Cerrar");
 
         $("#portfolioModal4 h2").html("Desarrollo de Software");
         $("#portfolioModal4 p.info_modal").html("Desarrollo y soporte de funcionalidades para el sistema de gestión de máquinas en linea SMOL y SMOL Central.");
-        $("#portfolioModal4 ul").html("<li>Empresa: <strong>Intelligent Electronic Solutions</strong></li><li>Fecha: <strong>Julio de 2017 a Diciembre de 2019</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        $("#portfolioModal4 ul.info-empresa").html("<li>Empresa: <strong>Intelligent Electronic Solutions</strong></li><li>Fecha: <strong>Julio de 2017 a Diciembre de 2019</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        $("#portfolioModal4 h4.subtitulo").html("Habilidades");
+        $("#portfolioModal4 ul.info-habilidades").html("<li class=\"list-group-item\">Java</li><li class=\"list-group-item\">JavaEE</li><li class=\"list-group-item\">PostgreSQL</li><li class=\"list-group-item\">Wildfly</li><li class=\"list-group-item\">Docker</li><li class=\"list-group-item\">Primefaces</li>");
         $("#portfolioModal4 button").html("<i class='fa fa-times'></i> Cerrar");
 
         $("#portfolioModal5 h2").html("Desarrollo de Software");
         $("#portfolioModal5 p.info_modal").html("Desarrollo y soporte de funcionalidades para las aplicaciones base de los equipos de tecnología de Suramericana.");
-        $("#portfolioModal5 ul").html("<li>Empresa: <strong>Ceiba Software House / Suramericana</strong></li><li>Fecha: <strong>Junio de 2020 a Actualidad</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        $("#portfolioModal5 ul.info-empresa").html("<li>Empresa: <strong>Ceiba Software House / Suramericana</strong></li><li>Fecha: <strong>Junio de 2020 a Actualidad</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        $("#portfolioModal5 h4.subtitulo").html("Habilidades");
+        $("#portfolioModal5 ul.info-habilidades").html("<li class=\"list-group-item\">Java</li><li class=\"list-group-item\">JavaEE</li><li class=\"list-group-item\">Spring</li><li class=\"list-group-item\">Spring Boot</li><li class=\"list-group-item\">Oracle DB</li><li class=\"list-group-item\">Weblogic</li><li class=\"list-group-item\">Azure</li><li class=\"list-group-item\">PostgreSQL</li><li class=\"list-group-item\">Angular</li><li class=\"list-group-item\">Terraform</li><li class=\"list-group-item\">GWT</li><li class=\"list-group-item\">Docker</li>");
         $("#portfolioModal5 button").html("<i class='fa fa-times'></i> Cerrar");
     } else if (value == "en") {
         $("title").html("Alejandro Castaño Agudelo - Portfolio");
@@ -123,22 +131,30 @@ var changeLanguage = function(value) {
         $("#portfolioModal2 h2").html("Web Development");
         $("#portfolioModal2 p.info_modal").html("Website created for the Programa de Integración a las Tecnologias of the University of Antioquia, which uses cURL software to query information.");
         $("#portfolioModal2 p a").html("Visit site");
-        $("#portfolioModal2 ul").html("<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date:	<strong>November 2015</strong></li><li>Service: <strong>Web development</strong></li>");
+        $("#portfolioModal2 ul.info-empresa").html("<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date:	<strong>November 2015</strong></li><li>Service: <strong>Web development</strong></li>");
+        $("#portfolioModal2 h4.subtitulo").html("Skills");
+        $("#portfolioModal2 ul.info-habilidades").html("<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
         $("#portfolioModal2 button").html("<i class='fa fa-times'></i> Close");
 
         $("#portfolioModal3 h2").html("Web Development");
         $("#portfolioModal3 p.info_modal").html("Website created for the supervision and analysis of climatic conditions that may interfere with the course of aircraft of the Fuerza Aerea Colombiana.");
-        $("#portfolioModal3 ul").html("<li>Company: <strong>Fuerza Aerea Colombiana</strong></li><li>Date: <strong>February 2017 to July 2017</strong></li><li>Service: <strong>Web Development</strong></li>");
+        $("#portfolioModal3 ul.info-empresa").html("<li>Company: <strong>Fuerza Aerea Colombiana</strong></li><li>Date: <strong>February 2017 to July 2017</strong></li><li>Service: <strong>Web Development</strong></li>");
+        $("#portfolioModal3 h4.subtitulo").html("Skills");
+        $("#portfolioModal3 ul.info-habilidades").html("<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
         $("#portfolioModal3 button").html("<i class='fa fa-times'></i> Close");
 
         $("#portfolioModal4 h2").html("Software Development");
         $("#portfolioModal4 p.info_modal").html("Development and support of features for the online machine management system SMOL and SMOL Central");
-        $("#portfolioModal4 ul").html("<li>Company: <strong>Intelligent Electronic Solutions</strong></li><li>Date: <strong>July 2017 to December 2019</strong></li><li>Service: <strong>Software Development</strong></li>");
+        $("#portfolioModal4 ul.info-empresa").html("<li>Company: <strong>Intelligent Electronic Solutions</strong></li><li>Date: <strong>July 2017 to December 2019</strong></li><li>Service: <strong>Software Development</strong></li>");
+        $("#portfolioModal4 h4.subtitulo").html("Skills");
+        $("#portfolioModal4 ul.info-habilidades").html("<li class=\"list-group-item\">Java</li><li class=\"list-group-item\">JavaEE</li><li class=\"list-group-item\">PostgreSQL</li><li class=\"list-group-item\">Wildfly</li><li class=\"list-group-item\">Docker</li><li class=\"list-group-item\">Primefaces</li>");
         $("#portfolioModal4 button").html("<i class='fa fa-times'></i> Close");
 
         $("#portfolioModal5 h2").html("Software Development");
         $("#portfolioModal5 p.info_modal").html("Development and support of features for base applications of development teams of Suramericana.");
-        $("#portfolioModal5 ul").html("<li>Company: <strong>Ceiba Software House / Suramericana</strong></li><li>Date: <strong>June 2020 to Present</strong></li><li>Service: <strong>Software Development</strong></li>");
+        $("#portfolioModal5 ul.info-empresa").html("<li>Company: <strong>Ceiba Software House / Suramericana</strong></li><li>Date: <strong>June 2020 to Present</strong></li><li>Service: <strong>Software Development</strong></li>");
+        $("#portfolioModal5 h4.subtitulo").html("Skills");
+        $("#portfolioModal5 ul.info-habilidades").html("<li class=\"list-group-item\">Java</li><li class=\"list-group-item\">JavaEE</li><li class=\"list-group-item\">Spring</li><li class=\"list-group-item\">Spring Boot</li><li class=\"list-group-item\">Oracle DB</li><li class=\"list-group-item\">Weblogic</li><li class=\"list-group-item\">Azure</li><li class=\"list-group-item\">PostgreSQL</li><li class=\"list-group-item\">Angular</li><li class=\"list-group-item\">Terraform</li><li class=\"list-group-item\">GWT</li><li class=\"list-group-item\">Docker</li>");
         $("#portfolioModal5 button").html("<i class='fa fa-times'></i> Close");
     }
 }
