@@ -1,3 +1,8 @@
+var establecerAtributo = function(selector, llave, valor) {
+    let item = document.querySelector(selector);
+    item.setAttribute(llave, valor);
+}
+
 var initData = function() {
     var skillJava = 95;
     var skillJavaEE = 90;
@@ -18,24 +23,24 @@ var initData = function() {
     var skillArquitectura = 75;
     var skillAngular = 75;
 
-    $("#s_java .progress-bar").attr("aria-valuenow", skillJava);
-    $("#s_javaEE .progress-bar").attr("aria-valuenow", skillJavaEE);
-    $("#s_html .progress-bar").attr("aria-valuenow", skillHTML);
-    $("#s_css .progress-bar").attr("aria-valuenow", skillCSS);
-    $("#s_js .progress-bar").attr("aria-valuenow", skillJS);
-    $("#s_sql .progress-bar").attr("aria-valuenow", skillSQL);
-    $("#s_linux .progress-bar").attr("aria-valuenow", skillLinux);
-    $("#s_azure .progress-bar").attr("aria-valuenow", skillAzure);
-    $("#s_docker .progress-bar").attr("aria-valuenow", skillDocker);
-    $("#s_scrum .progress-bar").attr("aria-valuenow", skillScrum);
-    $("#s_git .progress-bar").attr("aria-valuenow", skillGit);
-    $("#s_spring .progress-bar").attr("aria-valuenow", skillSpring);
-    $("#s_springBoot .progress-bar").attr("aria-valuenow", skillSpringBoot);
-    $("#s_terraform .progress-bar").attr("aria-valuenow", skillTerraform);
-    $("#s_wildfly .progress-bar").attr("aria-valuenow", skillWildfly);
-    $("#s_weblogic .progress-bar").attr("aria-valuenow", skillWeblogic);
-    $("#s_arquitectura .progress-bar").attr("aria-valuenow", skillArquitectura);
-    $("#s_angular .progress-bar").attr("aria-valuenow", skillAngular);
+    establecerAtributo("#s_java .progress-bar", "aria-valuenow", skillJava);
+    establecerAtributo("#s_javaEE .progress-bar", "aria-valuenow", skillJavaEE);
+    establecerAtributo("#s_html .progress-bar", "aria-valuenow", skillHTML);
+    establecerAtributo("#s_css .progress-bar", "aria-valuenow", skillCSS);
+    establecerAtributo("#s_js .progress-bar", "aria-valuenow", skillJS);
+    establecerAtributo("#s_sql .progress-bar", "aria-valuenow", skillSQL);
+    establecerAtributo("#s_linux .progress-bar", "aria-valuenow", skillLinux);
+    establecerAtributo("#s_azure .progress-bar", "aria-valuenow", skillAzure);
+    establecerAtributo("#s_docker .progress-bar", "aria-valuenow", skillDocker);
+    establecerAtributo("#s_scrum .progress-bar", "aria-valuenow", skillScrum);
+    establecerAtributo("#s_git .progress-bar", "aria-valuenow", skillGit);
+    establecerAtributo("#s_spring .progress-bar", "aria-valuenow", skillSpring);
+    establecerAtributo("#s_springBoot .progress-bar", "aria-valuenow", skillSpringBoot);
+    establecerAtributo("#s_terraform .progress-bar", "aria-valuenow", skillTerraform);
+    establecerAtributo("#s_wildfly .progress-bar", "aria-valuenow", skillWildfly);
+    establecerAtributo("#s_weblogic .progress-bar", "aria-valuenow", skillWeblogic);
+    establecerAtributo("#s_arquitectura .progress-bar", "aria-valuenow", skillArquitectura);
+    establecerAtributo("#s_angular .progress-bar", "aria-valuenow", skillAngular);
 }
 
 var initSkills = function() {
@@ -49,7 +54,7 @@ var initSkills = function() {
 }
 
 var reemplazarHtml = function(selector, texto) {
-    var item = document.querySelector(selector);
+    let item = document.querySelector(selector);
     item.innerHTML = texto;
 }
 
