@@ -23,34 +23,24 @@ var initData = function() {
     var skillArquitectura = 75;
     var skillAngular = 75;
 
-    establecerAtributo("#s_java .progress-bar", "aria-valuenow", skillJava);
-    establecerAtributo("#s_javaEE .progress-bar", "aria-valuenow", skillJavaEE);
-    establecerAtributo("#s_html .progress-bar", "aria-valuenow", skillHTML);
-    establecerAtributo("#s_css .progress-bar", "aria-valuenow", skillCSS);
-    establecerAtributo("#s_js .progress-bar", "aria-valuenow", skillJS);
-    establecerAtributo("#s_sql .progress-bar", "aria-valuenow", skillSQL);
-    establecerAtributo("#s_linux .progress-bar", "aria-valuenow", skillLinux);
-    establecerAtributo("#s_azure .progress-bar", "aria-valuenow", skillAzure);
-    establecerAtributo("#s_docker .progress-bar", "aria-valuenow", skillDocker);
-    establecerAtributo("#s_scrum .progress-bar", "aria-valuenow", skillScrum);
-    establecerAtributo("#s_git .progress-bar", "aria-valuenow", skillGit);
-    establecerAtributo("#s_spring .progress-bar", "aria-valuenow", skillSpring);
-    establecerAtributo("#s_springBoot .progress-bar", "aria-valuenow", skillSpringBoot);
-    establecerAtributo("#s_terraform .progress-bar", "aria-valuenow", skillTerraform);
-    establecerAtributo("#s_wildfly .progress-bar", "aria-valuenow", skillWildfly);
-    establecerAtributo("#s_weblogic .progress-bar", "aria-valuenow", skillWeblogic);
-    establecerAtributo("#s_arquitectura .progress-bar", "aria-valuenow", skillArquitectura);
-    establecerAtributo("#s_angular .progress-bar", "aria-valuenow", skillAngular);
-}
-
-var initSkills = function() {
-    $(window).scroll(function() {
-        if ($(window).scrollTop() + $(window).height() >= $("#skills").position().top) {
-            $('.progress-bar').each(function() {
-                $(this).animate({ width: $(this).attr('aria-valuenow') + "%" }, 2000);
-            });
-        }
-    });
+    establecerAtributo("#s_java .progress-bar", "style", "width: " + skillJava + "%");
+    establecerAtributo("#s_javaEE .progress-bar", "style", "width: " + skillJavaEE + "%");
+    establecerAtributo("#s_html .progress-bar", "style", "width: " + skillHTML + "%");
+    establecerAtributo("#s_css .progress-bar", "style", "width: " + skillCSS + "%");
+    establecerAtributo("#s_js .progress-bar", "style", "width: " + skillJS + "%");
+    establecerAtributo("#s_sql .progress-bar", "style", "width: " + skillSQL + "%");
+    establecerAtributo("#s_linux .progress-bar", "style", "width: " + skillLinux + "%");
+    establecerAtributo("#s_azure .progress-bar", "style", "width: " + skillAzure + "%");
+    establecerAtributo("#s_docker .progress-bar", "style", "width: " + skillDocker + "%");
+    establecerAtributo("#s_scrum .progress-bar", "style", "width: " + skillScrum + "%");
+    establecerAtributo("#s_git .progress-bar", "style", "width: " + skillGit + "%");
+    establecerAtributo("#s_spring .progress-bar", "style", "width: " + skillSpring + "%");
+    establecerAtributo("#s_springBoot .progress-bar", "style", "width: " + skillSpringBoot + "%");
+    establecerAtributo("#s_terraform .progress-bar", "style", "width: " + skillTerraform + "%");
+    establecerAtributo("#s_wildfly .progress-bar", "style", "width: " + skillWildfly + "%");
+    establecerAtributo("#s_weblogic .progress-bar", "style", "width: " + skillWeblogic + "%");
+    establecerAtributo("#s_arquitectura .progress-bar", "style", "width: " + skillArquitectura + "%");
+    establecerAtributo("#s_angular .progress-bar", "style", "width: " + skillAngular + "%");
 }
 
 var reemplazarHtml = function(selector, texto) {
@@ -171,6 +161,5 @@ var changeLanguage = function(value) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
     initData();
-    initSkills();
     changeLanguage("es");
 });
