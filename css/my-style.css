@@ -44,3 +44,7 @@ div.col-lg-12 img.img-responsive {
     width: 204.8px;
     height: 204.8px;
 }
+
+img.profile-img {
+    border-radius: 50%;
+}
