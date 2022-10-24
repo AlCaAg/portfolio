@@ -5,23 +5,23 @@ var establecerAtributo = function(selector, llave, valor) {
 
 var initData = function() {
     var skillJava = 95;
-    var skillJavaEE = 90;
-    var skillHTML = 75;
-    var skillCSS = 75;
-    var skillJS = 75;
+    var skillJavaEE = 95;
+    var skillHTML = 60;
+    var skillCSS = 60;
+    var skillJS = 60;
     var skillSQL = 85;
     var skillLinux = 75;
-    var skillAzure = 75;
+    var skillAzure = 60;
     var skillDocker = 85;
-    var skillScrum = 80;
     var skillGit = 85;
     var skillSpring = 95;
     var skillSpringBoot = 95;
-    var skillTerraform = 70;
-    var skillWildfly = 70;
-    var skillWeblogic = 70;
-    var skillArquitectura = 75;
-    var skillAngular = 75;
+    var skillTerraform = 60;
+    var skillWildfly = 60;
+    var skillWeblogic = 60;
+    var skillArquitectura = 60;
+    var skillAngular = 60;
+    var skillAWS = 75;
 
     establecerAtributo("#s_java .progress-bar", "style", "width: " + skillJava + "%");
     establecerAtributo("#s_javaEE .progress-bar", "style", "width: " + skillJavaEE + "%");
@@ -32,7 +32,7 @@ var initData = function() {
     establecerAtributo("#s_linux .progress-bar", "style", "width: " + skillLinux + "%");
     establecerAtributo("#s_azure .progress-bar", "style", "width: " + skillAzure + "%");
     establecerAtributo("#s_docker .progress-bar", "style", "width: " + skillDocker + "%");
-    establecerAtributo("#s_scrum .progress-bar", "style", "width: " + skillScrum + "%");
+    establecerAtributo("#s_aws .progress-bar", "style", "width: " + skillAWS + "%");
     establecerAtributo("#s_git .progress-bar", "style", "width: " + skillGit + "%");
     establecerAtributo("#s_spring .progress-bar", "style", "width: " + skillSpring + "%");
     establecerAtributo("#s_springBoot .progress-bar", "style", "width: " + skillSpringBoot + "%");
@@ -44,8 +44,26 @@ var initData = function() {
 }
 
 var reemplazarHtml = function(selector, texto) {
+    console.log(selector);
+    console.log(texto);
     let item = document.querySelector(selector);
     item.innerHTML = texto;
+}
+
+var reemplazarHabilidades = function(selector, idioma) {
+    if (idioma === "es") {
+        reemplazarHtml(selector, "Habilidades");
+    } else if (idioma === "en") {
+        reemplazarHtml(selector, "Skills");
+    }
+}
+
+var reemplazarBotonCerrar = function(selector, idioma) {
+    if (idioma === "es") {
+        reemplazarHtml(selector, "<i class='fa fa-times'></i> Cerrar");
+    } else if (idioma === "en") {
+        reemplazarHtml(selector, "<i class='fa fa-times'></i> Close");
+    }
 }
 
 var changeLanguage = function(value) {
@@ -68,39 +86,40 @@ var changeLanguage = function(value) {
         reemplazarHtml("footer #social h3", "En la Web");
         reemplazarHtml("footer #lang_change h3", "Cambiar idioma");
 
-        reemplazarHtml("#portfolioModal1 p.info_modal", "Instalación, soporte y creación de contenido para el sistema de revistas de codigo abierto OJS (Open Journal System) de la Universidad de Antioquia.");
-        reemplazarHtml("#portfolioModal1 ul.info-empresa", "<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Octubre 2015 a Julio 2016</strong></li><li>Servicio: <strong>Soporte y creación de contenido Web</strong></li>");
-        reemplazarHtml("#portfolioModal1 h4.subtitulo", "Habilidades");
-        reemplazarHtml("#portfolioModal1 ul.info-habilidades", "<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
-        reemplazarHtml("#portfolioModal1 button", "<i class='fa fa-times'></i> Cerrar");
+        reemplazarHtml("#modalOJS p.info_modal", "Instalación, soporte y creación de contenido para el sistema de revistas de codigo abierto OJS (Open Journal System) de la Universidad de Antioquia.");
+        reemplazarHtml("#modalOJS ul.info-empresa", "<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Octubre 2015 a Julio 2016</strong></li><li>Servicio: <strong>Soporte y creación de contenido Web</strong></li>");
+        reemplazarHabilidades('#modalOJS h4.subtitulo', 'es');
+        reemplazarBotonCerrar("#modalOJS button", "es");
 
-        reemplazarHtml("#portfolioModal2 h2", "Desarrollo Web");
-        reemplazarHtml("#portfolioModal2 p.info_modal", "Página web creada para el Programa de Integración a las Tecnologias de la Universidad de Antioquia, el cual hace uso CURL para la consulta de información.");
-        reemplazarHtml("#portfolioModal2 ul.info-empresa", "<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Noviembre 2015</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
-        reemplazarHtml("#portfolioModal2 h4.subtitulo", "Habilidades");
-        reemplazarHtml("#portfolioModal2 ul.info-habilidades", "<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
-        reemplazarHtml("#portfolioModal2 button", "<i class='fa fa-times'></i> Cerrar");
+        reemplazarHtml("#modalUdeA h2", "Desarrollo Web");
+        reemplazarHtml("#modalUdeA p.info_modal", "Página web creada para el Programa de Integración a las Tecnologias de la Universidad de Antioquia, el cual hace uso CURL para la consulta de información.");
+        reemplazarHtml("#modalUdeA ul.info-empresa", "<li>Empresa: <strong>Universidad de Antioquia</strong></li><li>Fecha: <strong>Noviembre 2015</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
+        reemplazarHabilidades('#modalUdeA h4.subtitulo', 'es');
+        reemplazarBotonCerrar("#modalUdeA button", "es");
 
-        reemplazarHtml("#portfolioModal3 h2", "Desarrollo Web");
-        reemplazarHtml("#portfolioModal3 p.info_modal", "Página web creada para la supervisión y análisis de condiciones climáticas que puedan interferir con el rumbo de aviones de la Fuerza Aérea Colombiana.");
-        reemplazarHtml("#portfolioModal3 ul.info-empresa", "<li>Empresa: <strong>Fuerza Aerea Colombiana</strong></li><li>Fecha: <strong>Febrero 2017 a Julio 2017</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
-        reemplazarHtml("#portfolioModal3 h4.subtitulo", "Habilidades");
-        reemplazarHtml("#portfolioModal3 ul.info-habilidades", "<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
-        reemplazarHtml("#portfolioModal3 button", "<i class='fa fa-times'></i> Cerrar");
+        reemplazarHtml("#modalFAC h2", "Desarrollo Web");
+        reemplazarHtml("#modalFAC p.info_modal", "Página web creada para la supervisión y análisis de condiciones climáticas que puedan interferir con el rumbo de aviones de la Fuerza Aérea Colombiana.");
+        reemplazarHtml("#modalFAC ul.info-empresa", "<li>Empresa: <strong>Fuerza Aerea Colombiana</strong></li><li>Fecha: <strong>Febrero 2017 a Julio 2017</strong></li><li>Servicio: <strong>Desarrollo Web</strong></li>");
+        reemplazarHabilidades('#modalFAC h4.subtitulo', 'es');
+        reemplazarBotonCerrar("#modalFAC button", "es");
 
-        reemplazarHtml("#portfolioModal4 h2", "Desarrollo de Software");
-        reemplazarHtml("#portfolioModal4 p.info_modal", "Desarrollo y soporte de funcionalidades para el sistema de gestión de máquinas en linea SMOL y SMOL Central.");
-        reemplazarHtml("#portfolioModal4 ul.info-empresa", "<li>Empresa: <strong>Intelligent Electronic Solutions</strong></li><li>Fecha: <strong>Julio de 2017 a Diciembre de 2019</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
-        reemplazarHtml("#portfolioModal4 h4.subtitulo", "Habilidades");
-        reemplazarHtml("#portfolioModal4 ul.info-habilidades", "<li class=\"list-group-item\">Java</li><li class=\"list-group-item\">JavaEE</li><li class=\"list-group-item\">PostgreSQL</li><li class=\"list-group-item\">Wildfly</li><li class=\"list-group-item\">Docker</li><li class=\"list-group-item\">Primefaces</li>");
-        reemplazarHtml("#portfolioModal4 button", "<i class='fa fa-times'></i> Cerrar");
+        reemplazarHtml("#modalIES h2", "Desarrollo de Software");
+        reemplazarHtml("#modalIES p.info_modal", "Desarrollo y soporte de funcionalidades para el sistema de gestión de máquinas en linea SMOL y SMOL Central.");
+        reemplazarHtml("#modalIES ul.info-empresa", "<li>Empresa: <strong>Intelligent Electronic Solutions</strong></li><li>Fecha: <strong>Julio 2017 a Diciembre 2019</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        reemplazarHabilidades('#modalIES h4.subtitulo', 'es');
+        reemplazarBotonCerrar("#modalIES button", "es");
 
-        reemplazarHtml("#portfolioModal5 h2", "Desarrollo de Software");
-        reemplazarHtml("#portfolioModal5 p.info_modal", "Desarrollo y soporte de funcionalidades para las aplicaciones base de los equipos de tecnología de Suramericana.");
-        reemplazarHtml("#portfolioModal5 ul.info-empresa", "<li>Empresa: <strong>Ceiba Software House / Suramericana</strong></li><li>Fecha: <strong>Junio de 2020 a Actualidad</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
-        reemplazarHtml("#portfolioModal5 h4.subtitulo", "Habilidades");
-        reemplazarHtml("#portfolioModal5 ul.info-habilidades", "<li class=\"list-group-item\">Java</li><li class=\"list-group-item\">JavaEE</li><li class=\"list-group-item\">Spring</li><li class=\"list-group-item\">Spring Boot</li><li class=\"list-group-item\">Oracle DB</li><li class=\"list-group-item\">Weblogic</li><li class=\"list-group-item\">Azure</li><li class=\"list-group-item\">PostgreSQL</li><li class=\"list-group-item\">Angular</li><li class=\"list-group-item\">Terraform</li><li class=\"list-group-item\">GWT</li><li class=\"list-group-item\">Docker</li>");
-        reemplazarHtml("#portfolioModal5 button", "<i class='fa fa-times'></i> Cerrar");
+        reemplazarHtml("#modalSura h2", "Desarrollo de Software");
+        reemplazarHtml("#modalSura p.info_modal", "Desarrollo y soporte de funcionalidades para las aplicaciones base de los equipos de tecnología de Suramericana.");
+        reemplazarHtml("#modalSura ul.info-empresa", "<li>Empresa: <strong>Ceiba Software House / Suramericana</strong></li><li>Fecha: <strong>Junio 2020 a Febrero 2022</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        reemplazarHabilidades('#modalSura h4.subtitulo', 'es');
+        reemplazarBotonCerrar("#modalSura button", "es");
+
+        reemplazarHtml("#modalLulo h2", "Desarrollo de Software");
+        reemplazarHtml("#modalLulo p.info_modal", "Backend developer en squad de procesos backoffice, validación de listas de riesgo y generación de tarjeta");
+        reemplazarHtml("#modalLulo ul.info-empresa", "<li>Empresa: <strong>Lulo Bank</strong></li><li>Fecha: <strong>Febrero 2022 a Actualidad</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        reemplazarHabilidades('#modalLulo h4.subtitulo', 'es');
+        reemplazarBotonCerrar("#modalLulo button", "es");
     } else if (value == "en") {
         reemplazarHtml("title", "Alejandro Castaño Agudelo - Portfolio");
         reemplazarHtml("button.navbar-toggle", "<span class='sr-only'>Toggle navigation</span> Menu <i class='fa fa-bars'></i>");
@@ -121,41 +140,40 @@ var changeLanguage = function(value) {
         reemplazarHtml("footer #social h3", "Aroung the Web");
         reemplazarHtml("footer #lang_change h3", "Change language");
 
-        reemplazarHtml("#portfolioModal1 p.info_modal", "Installation, support and creation of content for the OJS (Open Journal System) of the University of Antioquia.");
-        reemplazarHtml("#portfolioModal1 p a", "Visit site");
-        reemplazarHtml("#portfolioModal1 ul.info-empresa", "<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date: <strong>October 2015 to July 2016</strong></li><li>Service: <strong>Web support and development</strong></li>");
-        reemplazarHtml("#portfolioModal1 h4.subtitulo", "Skills");
-        reemplazarHtml("#portfolioModal1 ul.info-habilidades", "<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
-        reemplazarHtml("#portfolioModal1 button", "<i class='fa fa-times'></i> Close");
+        reemplazarHtml("#modalOJS p.info_modal", "Installation, support and creation of content for the OJS (Open Journal System) of the University of Antioquia.");
+        reemplazarHtml("#modalOJS ul.info-empresa", "<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date: <strong>October 2015 to July 2016</strong></li><li>Service: <strong>Web support and development</strong></li>");
+        reemplazarHabilidades('#modalOJS h4.subtitulo', 'en');
+        reemplazarBotonCerrar("#modalOJS button", "en");
 
-        reemplazarHtml("#portfolioModal2 h2", "Web Development");
-        reemplazarHtml("#portfolioModal2 p.info_modal", "Website created for the Programa de Integración a las Tecnologias of the University of Antioquia, which uses cURL software to query information.");
-        reemplazarHtml("#portfolioModal2 p a", "Visit site");
-        reemplazarHtml("#portfolioModal2 ul.info-empresa", "<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date:	<strong>November 2015</strong></li><li>Service: <strong>Web development</strong></li>");
-        reemplazarHtml("#portfolioModal2 h4.subtitulo", "Skills");
-        reemplazarHtml("#portfolioModal2 ul.info-habilidades", "<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
-        reemplazarHtml("#portfolioModal2 button", "<i class='fa fa-times'></i> Close");
+        reemplazarHtml("#modalUdeA h2", "Web Development");
+        reemplazarHtml("#modalUdeA p.info_modal", "Website created for the Programa de Integración a las Tecnologias of the University of Antioquia, which uses cURL software to query information.");
+        reemplazarHtml("#modalUdeA ul.info-empresa", "<li>Company: <strong>Universidad de Antioquia</strong></li><li>Date:	<strong>November 2015</strong></li><li>Service: <strong>Web development</strong></li>");
+        reemplazarHabilidades('#modalUdeA h4.subtitulo', 'en');
+        reemplazarBotonCerrar("#modalUdeA button", "en");
 
-        reemplazarHtml("#portfolioModal3 h2", "Web Development");
-        reemplazarHtml("#portfolioModal3 p.info_modal", "Website created for the supervision and analysis of climatic conditions that may interfere with the course of aircraft of the Fuerza Aerea Colombiana.");
-        reemplazarHtml("#portfolioModal3 ul.info-empresa", "<li>Company: <strong>Fuerza Aerea Colombiana</strong></li><li>Date: <strong>February 2017 to July 2017</strong></li><li>Service: <strong>Web Development</strong></li>");
-        reemplazarHtml("#portfolioModal3 h4.subtitulo", "Skills");
-        reemplazarHtml("#portfolioModal3 ul.info-habilidades", "<li class=\"list-group-item\">HTML</li><li class=\"list-group-item\">CSS</li><li class=\"list-group-item\">Javascript</li><li class=\"list-group-item\">PHP</li>");
-        reemplazarHtml("#portfolioModal3 button", "<i class='fa fa-times'></i> Close");
+        reemplazarHtml("#modalFAC h2", "Web Development");
+        reemplazarHtml("#modalFAC p.info_modal", "Website created for the supervision and analysis of climatic conditions that may interfere with the course of aircraft of the Fuerza Aerea Colombiana.");
+        reemplazarHtml("#modalFAC ul.info-empresa", "<li>Company: <strong>Fuerza Aerea Colombiana</strong></li><li>Date: <strong>February 2017 to July 2017</strong></li><li>Service: <strong>Web Development</strong></li>");
+        reemplazarHabilidades('#modalFAC h4.subtitulo', 'en');
+        reemplazarBotonCerrar("#modalFAC button", "en");
 
-        reemplazarHtml("#portfolioModal4 h2", "Software Development");
-        reemplazarHtml("#portfolioModal4 p.info_modal", "Development and support of features for the online machine management system SMOL and SMOL Central");
-        reemplazarHtml("#portfolioModal4 ul.info-empresa", "<li>Company: <strong>Intelligent Electronic Solutions</strong></li><li>Date: <strong>July 2017 to December 2019</strong></li><li>Service: <strong>Software Development</strong></li>");
-        reemplazarHtml("#portfolioModal4 h4.subtitulo", "Skills");
-        reemplazarHtml("#portfolioModal4 ul.info-habilidades", "<li class=\"list-group-item\">Java</li><li class=\"list-group-item\">JavaEE</li><li class=\"list-group-item\">PostgreSQL</li><li class=\"list-group-item\">Wildfly</li><li class=\"list-group-item\">Docker</li><li class=\"list-group-item\">Primefaces</li>");
-        reemplazarHtml("#portfolioModal4 button", "<i class='fa fa-times'></i> Close");
+        reemplazarHtml("#modalIES h2", "Software Development");
+        reemplazarHtml("#modalIES p.info_modal", "Development and support of features for the online machine management system SMOL and SMOL Central");
+        reemplazarHtml("#modalIES ul.info-empresa", "<li>Company: <strong>Intelligent Electronic Solutions</strong></li><li>Date: <strong>July 2017 to December 2019</strong></li><li>Service: <strong>Software Development</strong></li>");
+        reemplazarHabilidades('#modalIES h4.subtitulo', 'en');
+        reemplazarBotonCerrar("#modalIES button", "en");
 
-        reemplazarHtml("#portfolioModal5 h2", "Software Development");
-        reemplazarHtml("#portfolioModal5 p.info_modal", "Development and support of features for base applications of development teams of Suramericana.");
-        reemplazarHtml("#portfolioModal5 ul.info-empresa", "<li>Company: <strong>Ceiba Software House / Suramericana</strong></li><li>Date: <strong>June 2020 to Present</strong></li><li>Service: <strong>Software Development</strong></li>");
-        reemplazarHtml("#portfolioModal5 h4.subtitulo", "Skills");
-        reemplazarHtml("#portfolioModal5 ul.info-habilidades", "<li class=\"list-group-item\">Java</li><li class=\"list-group-item\">JavaEE</li><li class=\"list-group-item\">Spring</li><li class=\"list-group-item\">Spring Boot</li><li class=\"list-group-item\">Oracle DB</li><li class=\"list-group-item\">Weblogic</li><li class=\"list-group-item\">Azure</li><li class=\"list-group-item\">PostgreSQL</li><li class=\"list-group-item\">Angular</li><li class=\"list-group-item\">Terraform</li><li class=\"list-group-item\">GWT</li><li class=\"list-group-item\">Docker</li>");
-        reemplazarHtml("#portfolioModal5 button", "<i class='fa fa-times'></i> Close");
+        reemplazarHtml("#modalSura h2", "Software Development");
+        reemplazarHtml("#modalSura p.info_modal", "Development and support of features for base applications of development teams of Suramericana.");
+        reemplazarHtml("#modalSura ul.info-empresa", "<li>Company: <strong>Ceiba Software House / Suramericana</strong></li><li>Date: <strong>June 2020 to February 2022</strong></li><li>Service: <strong>Software Development</strong></li>");
+        reemplazarHabilidades('#modalSura h4.subtitulo', 'en');
+        reemplazarBotonCerrar("#modalSura button", "en");
+
+        reemplazarHtml("#modalLulo h2", "Software Development");
+        reemplazarHtml("#modalLulo p.info_modal", "Backend developer on backoffice process squad, risk list validation and card generation process");
+        reemplazarHtml("#modalLulo ul.info-empresa", "<li>Company: <strong>Lulo Bank</strong></li><li>Fecha: <strong>February 2022 to Present</strong></li><li>Service: <strong>Software Development</strong></li>");
+        reemplazarHabilidades('#modalLulo h4.subtitulo', 'en');
+        reemplazarBotonCerrar("#modalLulo button", "en");
     }
 }
 
