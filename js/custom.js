@@ -5,7 +5,7 @@ var establecerAtributo = function(selector, llave, valor) {
 
 var initData = function() {
     var skillJava = 95;
-    var skillJavaEE = 95;
+    var skillJakarta = 95;
     var skillHTML = 60;
     var skillCSS = 60;
     var skillJS = 60;
@@ -21,10 +21,10 @@ var initData = function() {
     var skillWeblogic = 60;
     var skillArquitectura = 60;
     var skillAngular = 60;
-    var skillAWS = 75;
+    var skillAWS = 80;
 
     establecerAtributo("#s_java .progress-bar", "style", "width: " + skillJava + "%");
-    establecerAtributo("#s_javaEE .progress-bar", "style", "width: " + skillJavaEE + "%");
+    establecerAtributo("#s_jakarta .progress-bar", "style", "width: " + skillJakarta + "%");
     establecerAtributo("#s_html .progress-bar", "style", "width: " + skillHTML + "%");
     establecerAtributo("#s_css .progress-bar", "style", "width: " + skillCSS + "%");
     establecerAtributo("#s_js .progress-bar", "style", "width: " + skillJS + "%");
@@ -44,8 +44,6 @@ var initData = function() {
 }
 
 var reemplazarHtml = function(selector, texto) {
-    console.log(selector);
-    console.log(texto);
     let item = document.querySelector(selector);
     item.innerHTML = texto;
 }
@@ -116,10 +114,16 @@ var changeLanguage = function(value) {
         reemplazarBotonCerrar("#modalSura button", "es");
 
         reemplazarHtml("#modalLulo h2", "Desarrollo de Software");
-        reemplazarHtml("#modalLulo p.info_modal", "Backend developer en squad de procesos backoffice, validación de listas de riesgo y generación de tarjeta");
-        reemplazarHtml("#modalLulo ul.info-empresa", "<li>Empresa: <strong>Lulo Bank</strong></li><li>Fecha: <strong>Febrero 2022 a Actualidad</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        reemplazarHtml("#modalLulo p.info_modal", "Backend developer en equipo de procesos backoffice, validación de listas de riesgo y generación de tarjeta");
+        reemplazarHtml("#modalLulo ul.info-empresa", "<li>Empresa: <strong>Lulo Bank</strong></li><li>Fecha: <strong>Febrero 2022 a Diciembre 2022</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
         reemplazarHabilidades('#modalLulo h4.subtitulo', 'es');
         reemplazarBotonCerrar("#modalLulo button", "es");
+
+        reemplazarHtml("#modalPeigo h2", "Desarrollo de Software");
+        reemplazarHtml("#modalPeigo p.info_modal", "Backend developer en equipo de onboarding de usuario y cuenta bancaria");
+        reemplazarHtml("#modalPeigo ul.info-empresa", "<li>Empresa: <strong>peiGo</strong></li><li>Fecha: <strong>Diciembre 2022 a Actualidad</strong></li><li>Servicio: <strong>Desarrollo de Software</strong></li>");
+        reemplazarHabilidades('#modalPeigo h4.subtitulo', 'es');
+        reemplazarBotonCerrar("#modalPeigo button", "es");
     } else if (value == "en") {
         reemplazarHtml("title", "Alejandro Castaño Agudelo - Portfolio");
         reemplazarHtml("button.navbar-toggle", "<span class='sr-only'>Toggle navigation</span> Menu <i class='fa fa-bars'></i>");
@@ -171,13 +175,19 @@ var changeLanguage = function(value) {
 
         reemplazarHtml("#modalLulo h2", "Software Development");
         reemplazarHtml("#modalLulo p.info_modal", "Backend developer on backoffice process squad, risk list validation and card generation process");
-        reemplazarHtml("#modalLulo ul.info-empresa", "<li>Company: <strong>Lulo Bank</strong></li><li>Fecha: <strong>February 2022 to Present</strong></li><li>Service: <strong>Software Development</strong></li>");
+        reemplazarHtml("#modalLulo ul.info-empresa", "<li>Company: <strong>Lulo Bank</strong></li><li>Fecha: <strong>February 2022 to December 2022</strong></li><li>Service: <strong>Software Development</strong></li>");
         reemplazarHabilidades('#modalLulo h4.subtitulo', 'en');
         reemplazarBotonCerrar("#modalLulo button", "en");
+
+        reemplazarHtml("#modalPeigo h2", "Software Development");
+        reemplazarHtml("#modalPeigo p.info_modal", "Backend developer on user and bank account onboarding");
+        reemplazarHtml("#modalPeigo ul.info-empresa", "<li>Company: <strong>peiGo</strong></li><li>Fecha: <strong>December 2022 to Present</strong></li><li>Service: <strong>Software Development</strong></li>");
+        reemplazarHabilidades('#modalPeigo h4.subtitulo', 'en');
+        reemplazarBotonCerrar("#modalPeigo button", "en");
     }
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
     initData();
-    changeLanguage("es");
+    changeLanguage("en");
 });
